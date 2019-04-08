@@ -1,0 +1,27 @@
+title: SoftTravel
+email: evg_manolov@abv.bg
+description: This is scary, but awesome!
+destination: docs
+# baseurl: ""
+baseurl: "/SoftTravel"
+url: ""
+twitter_username: emanolov
+github_username: emanolov
+
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md]
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
