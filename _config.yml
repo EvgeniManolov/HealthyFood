@@ -2,8 +2,8 @@ title: SoftTravel
 email: evg_manolov@abv.bg
 description: This is scary, but awesome!
 destination: docs
-# baseurl: ""
-baseurl: "/SoftTravel"
+baseurl: ""
+# baseurl: "/SoftTravel"
 url: ""
 twitter_username: emanolov
 github_username: emanolov
