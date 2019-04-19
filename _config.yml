@@ -2,8 +2,8 @@ title: HealthyFood
 email: evg_manolov@abv.bg
 description: This is scary, but awesome!
 destination: docs
-# baseurl: ""
-baseurl: "/HealthyFood"
+baseurl: ""
+# baseurl: "/HealthyFood"
 url: ""
 twitter_username: emanolov
 github_username: emanolov

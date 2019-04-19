@@ -17,16 +17,19 @@ header {
     transform: translate(-50%, -50%);
 }
 
-
-/* MAIN NAV */
 .main-nav {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    // float: right;
     list-style: none;
     margin-top: 55px;
 }
 
 .main-nav li {
-   display: inline-block;
+   display: flex;
+//    justify-content: flex-end;
+
+   align-items: flex-end;
     margin-left: 40px;
 }
 
