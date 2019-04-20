@@ -14,9 +14,9 @@ html {
 
 html,
 body {
-    background-color: #fff;
+    background-color: var(--color-main-bgrd);
     color: #5d5d5d;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font: 16px/1.5/"Open Sans", sans-serif;
     font-weight: 300;
     font-size: 20px;
 }
@@ -76,7 +76,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    background-color: var(--color-main-text);
     content: " ";
     width: 100px;
     margin: 0 auto;
