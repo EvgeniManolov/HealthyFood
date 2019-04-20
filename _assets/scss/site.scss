@@ -1,22 +1,20 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+@import 'mixins';
+@import 'variables';
+@import 'workssection';
 @import 'typography';
 @import 'buttons';
+@import 'contactform';
 
 
 @import 'navigation';
+@import 'meals';
 @import 'workssection';
 @import 'plans';
-@import 'meals';
+@import 'grid'; 
 
-@import 'contactform';
 @import 'cities';
 @import 'testimonials';
-@import 'queries';
-@import 'variables';
-@import 'workssection';
-
-
 @import 'site-footer';
-@import 'grid'; 
-@import 'queries'; 
-
-@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css')

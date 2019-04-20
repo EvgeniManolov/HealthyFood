@@ -3,7 +3,7 @@
 }
 
 .plan-box {
-    background-color: #fff;
+    background-color: var(--color-main-bgrd);
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
@@ -30,32 +30,29 @@
         text-align: center;
         border-bottom: transparent;
     }
+
+    li {
+        padding: 5px 0;
+    }
+
+    ul {
+        list-style: none;
+    }
 }
 
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #e67e22;
+    color: var(--color-main-text);
 
     &-meal {
         font-size: 80%;
     }
 }
 
-.plan-price-meal {
-    font-size: 80%;
-}
-
-.plan-box ul {
-    list-style: none;
-}
-
-.plan-box li {
-    padding: 5px 0;
-}
-
-.fa-check {
-    color: #e67e22;
+.fa-check,
+.fa-times {
+    color: var(--color-main-text);
     margin-right: 0.5rem;
 }

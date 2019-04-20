@@ -11,15 +11,16 @@
 <body class="{{ page.body_class }} {{ page.title | slugify }}">
 
     <header>
-        <nav>
+            <label id="nav-toggle" for="nav-main-toggle" class="nav-toggle"><span>Menu</span></label>
+            <input type="checkbox" id="nav-main-toggle" name="nav-main-toggle">
+        <nav class="navigation">
             <div class="row">
                 <ul class="main-nav js--main-nav">
                     <li><a href="#features">Interesting facts</a></li>
-                    <li><a href="#works">Orders</a></li>
+                    <li><a href="#works">How to Order</a></li>
                     <li><a href="#restaurants">Our restaurants</a></li>
-                    <li><a href="#meals">Meals</a></li>
+                    <li><a href="#meals">Plans</a></li>
                 </ul>
-                <a class="mobile-nav-icon js--nav-icon sticky"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
@@ -226,25 +227,23 @@
                     <blockquote>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sapiente quas error eligendi
                         corrupti iusto nesciunt impedit consequatur, minus placeat! Optio quasi ab odit dolor error illo
-                        blanditiis totam veritatis?
+                        blanditiis totam veritatis? <blockquote>
                         <cite><img src="{{ site.baseurl }}/resources/img/customer-1.jpg">Alberto Duncan</cite>
-                    </blockquote>
                 </div>
                 <div class="col-testimon">
                     <blockquote>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sapiente quas error eligendi
                         corrupti iusto nesciunt impedit consequatur, minus placeat! Optio quasi ab odit dolor error illo
-                        blanditiis totam veritatis?
+                        blanditiis totam veritatis? <blockquote>
                         <cite><img src="{{ site.baseurl }}/resources/img/customer-2.jpg">Joana Silva</cite>
-                    </blockquote>
+                   
                 </div>
                 <div class="col-testimon">
                     <blockquote>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sapiente quas error eligendi
                         corrupti iusto nesciunt impedit consequatur, minus placeat! Optio quasi ab odit dolor error illo
-                        blanditiis totam veritatis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        blanditiis totam veritatis?Lorem ipsum dolor sit amet consectetur adipisicing elit.<blockquote>
                         <cite><img src="{{ site.baseurl }}/resources/img/customer-3.jpg">Milton Chapman</cite>
-                    </blockquote>
                 </div>
             </div>
         </section>
@@ -311,7 +310,7 @@
                             <ul>
                                 <li><i class="fas fa-check"></i>1 meal</li>
                                 <li><i class="fas fa-check"></i>Order from 8 am to 12 pm</li>
-                                <li><i class="fas fa-check"></i></li>
+                                <li><i class="fas fa-times"></i></i></li>
                                 <li><i class="fas fa-check"></i>Free delivery</li>
                             </ul>
                         </div>

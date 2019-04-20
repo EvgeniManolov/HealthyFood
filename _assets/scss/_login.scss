@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
-@import url("/css/mixins.scss");
 
 
 @mixin input($width, $margin-bottom,$border,$outline, $border-bottom, $color,$padding, $border-radius ) {
@@ -13,6 +12,7 @@
     padding:$padding;
     border-radius: $border-radius;
   }
+  
 * {
     padding: 0;
     margin: 0;
@@ -230,6 +230,12 @@ body {
     section.right>section>input[type="button"] {
         padding: 0.5rem;
         margin-top: 0;
+    }
+    body > section > section.subsection{
+        display: none;
+    }
+    body > section > section.right{
+        width: 100%;
     }
 }
 
