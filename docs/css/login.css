@@ -53,22 +53,19 @@ section.wrapper {
   justify-content: space-between;
   padding: 2rem;
   position: relative; }
-
-.subsection header {
-  font-weight: normal;
-  line-height: 1; }
-
-.subsection main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center; }
-
-.subsection footer {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center; }
+  .subsection header {
+    font-weight: normal;
+    line-height: 1; }
+  .subsection main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+  .subsection footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; }
 
 .map {
   cursor: pointer; }

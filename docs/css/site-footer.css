@@ -1,48 +1,47 @@
-/* FOOTER */
 footer {
   padding: 40px;
   background-color: #333;
   color: #e6e6e6;
   font-size: 80%; }
-
-.footer-nav {
-  text-decoration: none;
-  list-style: none;
-  float: left; }
+  footer-nav {
+    text-decoration: none;
+    list-style: none;
+    float: left; }
+  footer p {
+    margin-top: 20px;
+    color: #888;
+    text-align: center;
+    font-size: 100%; }
 
 .social-icons {
   list-style: none;
   float: right; }
 
-.footer-nav li a,
-.social-icons li a {
-  color: gray; }
-
 .footer-nav li,
 .social-icons li {
   display: inline-block;
   margin-right: 20px; }
+  .footer-nav li a,
+  .social-icons li a {
+    color: gray;
+    display: inline-block;
+    margin-right: 20px; }
+    .footer-nav li a:hover,
+    .social-icons li a:hover {
+      text-decoration: none;
+      border-bottom: 0;
+      color: #ddd; }
+    .footer-nav li a:link,
+    .social-icons li a:link {
+      text-decoration: none;
+      border-bottom: 0;
+      color: white;
+      transition: color 0.2s;
+      font-size: 150%; }
 
 .footer-nav li:last-child,
 .social-icons li:last-child {
   margin-right: 0; }
-
-.footer-nav li a:link,
-.social-icons li a:link {
-  text-decoration: none;
-  border-bottom: 0;
-  color: white;
-  transition: color 0.2s; }
-
-.footer-nav li a:hover,
-.social-icons li a:hover {
-  text-decoration: none;
-  border-bottom: 0;
-  color: #ddd; }
-
-.social-icons li a:visited,
-.social-icons li a:link {
-  font-size: 150%; }
 
 .fa-facebook-f,
 .fa-twitter,
@@ -61,8 +60,3 @@ footer {
 
 .fa-google-plus-square:hover {
   color: #dd4b39; }
-
-footer p {
-  margin-top: 20px;
-  color: #888;
-  text-align: center; }
