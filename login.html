@@ -1,94 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 
-<body class="{{ page.body_class }} {{ page.title | slugify }}">
-
-    <header>
-        <nav>
-            <div class="row">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="#features">Food Delivery</a></li>
-                    <li><a href="#works">How to order</a></li>
-                    <li><a href="#restaurants">Our restaurants</a></li>
-                    <li><a href="#meals">Meals</a></li>
-                    <li><a href="history.html">History</a></li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-            </div>
-        </nav>
-        <div class="hero-text-box">
-            <h1>The greatest wealth is Health.</h1>
-            <a href="#gallery" class="btn btn-ghost js--scroll-to-plans">Gallery</a>
-            <a href="#meals" class="btn btn-ghost js--scroll-to-start">Order meal</a>
-        </div>
-    </header>
-
-    <main class="site-content">
-        <div class="container">
-            <form action="GET">
-                <fieldset>
-                    <h1>Sign in with</h1>
-                    <section class="social-buttons">
-                        <section class="facebook">
-                            <i class="fab fa-facebook-square"></i>
-                            <input type="submit" value="Facebook">
-                        </section>
-                        <section class="google">
-                            <i class="fab fa-google"></i>
-                            <input type="submit" value="Google">
-                        </section>
-                    </section>
-                    <section class="inputs">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" id="username" required>
-                    </section>
-                    <section class="inputs">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </section>
-                    <section class="inputs">
-                        <input type="submit" value="Sign in">
-                    </section>
-                </fieldset>
+<body>
+    <section class="wrapper">
+        <section class="subsection">
+            <header>
+                <p>HealthyFood</p>
+            </header>
+            <main>
+                <h1>Welcome to HealthyFood.</h1>
+                <p>Are you ready to become a dev?</p>
+            </main>
+            <footer>
+                <section class="map">
+                    <i class="fas fa-globe-americas"></i>
+                </section>
+                <section class="github">
+                    <i class="fab fa-github"></i>
+                </section>
+                <section class="tweeter">
+                    <i class="fab fa-twitter"></i>
+                </section>
+            </footer>
+        </section>
+        <section class="right">
+            <form action="POST">
+                <section class="username">
+                    <label for="username">USERNAME</label>
+                    <input type="text" name="username" id="username" placeholder="antoniaat" required>
+                </section>
+                <section class="email">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="a.atanasova@softuni.bg" required>
+                </section>
+                <section class="password">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" placeholder="**********" required>
+                </section>
+                <section class="repeat-password">
+                    <label for="repeat-password">REPEAT PASSWORD</label>
+                    <input type="text" name="repeat-password" id="repeat-password" placeholder="**********" required>
+                </section>
             </form>
-        </div>
-
-    </main>
-
-    <footer>
-        <div class="row">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">iOS</a></li>
-                    <li><a href="#">Android</a></li>
-                </ul>
-            </div>
-            <div class="col span-1-of-2">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <p>
-                Copyright &copy; 2019 by HealthyFood. All rights reserved
-            </p>
-        </div>
-    </footer>
-
+            <section class="buttons">
+                
+                <a href="/"><input type="button" value="REGISTER"></a>
+            </section>
+        </section>
+    </section>
 </body>
 
 </html>
