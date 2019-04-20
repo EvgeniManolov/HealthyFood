@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+@import url("/css/mixins.scss");
+
+
+@mixin input($width, $margin-bottom,$border,$outline, $border-bottom, $color,$padding, $border-radius ) {
+    width: width;
+    margin-bottom:  $margin-bottom;
+    border: $border;
+    outline: $outline;
+    border-bottom: $border-bottom;
+    color: $color;
+    padding:$padding;
+    border-radius: $border-radius;
+  }
 * {
     padding: 0;
     margin: 0;
@@ -145,18 +158,18 @@ input[type=submit]:active {
     font-weight: 600;
 }
 
-.right input[type="text"],
-.right input[type="email"],
-.right input[type="password"] {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #D5D7DF;
-    color: #A0A5BB;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-    border-radius: 10px;
+.right input[type="text"] {
+    @include input(100%, 1.5rem,none, none, 1px solid #D5D7DF, #A0A5BB, 0.2rem 0.5rem 0.2rem 0.5rem, 10px );
 }
+
+.right input[type="password"] {
+    @include input(100%, 1.5rem,none, none, 1px solid #D5D7DF, #A0A5BB, 0.2rem 0.5rem 0.2rem 0.5rem, 10px );
+}
+
+.right input[type="email"] {
+    @include input(100%, 1.5rem,none, none, 1px solid #D5D7DF, #A0A5BB, 0.2rem 0.5rem 0.2rem 0.5rem, 10px );
+}
+
 
 body>section>section.right>section {
     margin-top: 1rem;

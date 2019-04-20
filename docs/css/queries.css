@@ -53,9 +53,10 @@
   .main-nav {
     display: none; }
   .mobile-nav-icon {
-    display: inline-block; }
+    display: block; }
   .main-nav {
     float: left;
+    display: block;
     margin-top: 35px;
     margin-left: 25px; }
   .main-nav li {
