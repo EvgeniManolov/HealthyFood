@@ -3,17 +3,14 @@
 :root {
   --color-main-text:  #e67e22;
   --color-main-bgrd: #FFF;
+  --color-body-color: #5d5d5d;
   --color-main-color: #FFF;
   --sizing-basic-border: 1px;
-  --sizing-bigger-border: 2px; }
-
-html,
-body {
-  background-color: var(--color-main-bgrd);
-  color: #5d5d5d;
-  font: 16px/1.5/"Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px; }
+  --sizing-bigger-border: 2px;
+  --font-size-initial: 12px;
+  --font-size-lv2: 14px;
+  --font-size-lv3: 16px;
+  --font-size-lv4: 18px; }
 
 .clearfix {
   zoom: 1; }
@@ -35,39 +32,6 @@ section {
 .box {
   padding: 1%; }
 
-h1,
-h2,
-h3 {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-h1 {
-  margin: 0;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%;
-  word-spacing: 4px; }
-
-h2 {
-  font-size: 180%;
-  word-spacing: 2px;
-  text-align: center;
-  margin-bottom: 30px; }
-
-h3 {
-  font-size: 110%;
-  margin-bottom: 15px; }
-
-h2:after {
-  display: block;
-  height: 2px;
-  background-color: var(--color-main-text);
-  content: " ";
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 30px; }
-
 .long-copy {
   line-height: 145%;
   width: 70%;
@@ -84,7 +48,7 @@ h2:after {
   .row {
     padding: 0 2%; } }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   body {
     font-size: 18px; }
   section {
@@ -115,7 +79,7 @@ h2:after {
   .contact-form {
     width: 80%; } }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 700px) {
   body {
     font-size: 16px; }
   section {
@@ -165,7 +129,7 @@ h2:after {
   .works-step:last-of-type {
     margin-bottom: 20px; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   section {
     padding: 25px 0; }
   .contact-form {
@@ -221,7 +185,6 @@ h2:after {
   padding: 0px;
   margin: 0px; }
 
-/*  GROUPING  ============================================================================= */
 .row:before,
 .row:after {
   content: "";
@@ -239,11 +202,9 @@ h2:after {
 .col:first-child {
   margin-left: 0; }
 
-/* all browsers except IE6 and lower */
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .col {
-    /*margin: 1% 0 1% 0%;*/
     margin: 0; } }
 
 /*  GRID OF TWO   ============================================================================= */
@@ -254,7 +215,7 @@ h2:after {
   width: 49.2%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .span-2-of-2 {
     width: 100%; }
   .span-1-of-2 {
@@ -271,7 +232,7 @@ h2:after {
   width: 32.26%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .span-3-of-3 {
     width: 100%; }
   .span-2-of-3 {
@@ -293,7 +254,7 @@ h2:after {
   width: 23.8%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .span-4-of-4 {
     width: 100%; }
   .span-3-of-4 {
@@ -312,6 +273,69 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+html,
+body {
+  background-color: var(--color-main-bgrd);
+  color: var(--color-body-color);
+  font: 16px/1.5/"Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px; }
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  word-spacing: 4px;
+  font-size: 3em;
+  font-weight: normal; }
+
+h2 {
+  font-size: 2.2em;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px; }
+
+h3 {
+  font-size: 1.9em;
+  margin-bottom: 15px; }
+
+h4 {
+  font-size: 1.6em; }
+
+h5 {
+  font-size: 1.4em; }
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: var(--color-main-text);
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: var(--font-size-initial, 12px); } }
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: var(--font-size-lv3, 14px); } }
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: var(--font-size-lv4, 16px); } }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: var(--font-size-lv4, 18px); } }
 
 .btn:link,
 .btn:visited,
@@ -385,7 +409,7 @@ header {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin-top: 25px; }
+  margin-top: 35px; }
   .main-nav li {
     display: flex;
     align-items: flex-end;
@@ -394,8 +418,7 @@ header {
     .main-nav li a:visited {
       color: var(--color-main-color);
       text-decoration: none;
-      text-transform: uppercase;
-      font-size: 90%;
+      font-size: 1.3em;
       border-bottom: var(--sizing-bigger-border) solid transparent;
       transition: border-bottom 0.2s;
       padding: 8px 0; }
@@ -416,7 +439,7 @@ header {
 input[type=checkbox] {
   display: none; }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 700px) {
   #nav-main-toggle:checked ~ .navigation ul {
     display: block;
     opacity: 1;
@@ -442,7 +465,7 @@ input[type=checkbox] {
       .navigation ul li {
         margin-left: 20px; }
       .navigation ul li:hover a {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 700;
         transition: 0.3s;
         border-bottom: var(--sizing-bigger-border) solid var(--color-main-text); } }
@@ -482,14 +505,6 @@ input[type=checkbox] {
       transform: scale(1.03);
       opacity: 1; }
 
-html,
-body {
-  background-color: var(--color-main-bgrd);
-  color: #5d5d5d;
-  font: 16px/1.5/"Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px; }
-
 .clearfix {
   zoom: 1; }
 
@@ -510,39 +525,6 @@ section {
 .box {
   padding: 1%; }
 
-h1,
-h2,
-h3 {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-h1 {
-  margin: 0;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%;
-  word-spacing: 4px; }
-
-h2 {
-  font-size: 180%;
-  word-spacing: 2px;
-  text-align: center;
-  margin-bottom: 30px; }
-
-h3 {
-  font-size: 110%;
-  margin-bottom: 15px; }
-
-h2:after {
-  display: block;
-  height: 2px;
-  background-color: var(--color-main-text);
-  content: " ";
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 30px; }
-
 .long-copy {
   line-height: 145%;
   width: 70%;
@@ -559,7 +541,7 @@ h2:after {
   .row {
     padding: 0 2%; } }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   body {
     font-size: 18px; }
   section {
@@ -590,7 +572,7 @@ h2:after {
   .contact-form {
     width: 80%; } }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 700px) {
   body {
     font-size: 16px; }
   section {
@@ -640,7 +622,7 @@ h2:after {
   .works-step:last-of-type {
     margin-bottom: 20px; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   section {
     padding: 25px 0; }
   .contact-form {
@@ -696,7 +678,6 @@ h2:after {
   padding: 0px;
   margin: 0px; }
 
-/*  GROUPING  ============================================================================= */
 .row:before,
 .row:after {
   content: "";
@@ -714,11 +695,9 @@ h2:after {
 .col:first-child {
   margin-left: 0; }
 
-/* all browsers except IE6 and lower */
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .col {
-    /*margin: 1% 0 1% 0%;*/
     margin: 0; } }
 
 /*  GRID OF TWO   ============================================================================= */
@@ -729,7 +708,7 @@ h2:after {
   width: 49.2%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .span-2-of-2 {
     width: 100%; }
   .span-1-of-2 {
@@ -746,7 +725,7 @@ h2:after {
   width: 32.26%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .span-3-of-3 {
     width: 100%; }
   .span-2-of-3 {
@@ -768,7 +747,7 @@ h2:after {
   width: 23.8%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .span-4-of-4 {
     width: 100%; }
   .span-3-of-4 {
@@ -828,7 +807,7 @@ h2:after {
     font-size: 20px;
     text-align: left; }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 700px) {
   .testimon {
     display: block; } }
 

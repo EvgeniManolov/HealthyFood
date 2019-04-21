@@ -11,19 +11,18 @@ header {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin-top: 25px;
+    margin-top: 35px;
 
     li {
         display: flex;
         align-items: flex-end;
-         margin-right: 50px;
+        margin-right: 50px;
 
          a:link,
          a:visited {
              color: var(--color-main-color);;
              text-decoration: none;
-             text-transform: uppercase;
-             font-size: 90%;
+             font-size: 1.3em;
              border-bottom: var(--sizing-bigger-border) solid transparent;
              -webkit-transition: border-bottom 0.2s;
              transition: border-bottom 0.2s;
@@ -55,7 +54,7 @@ input[type=checkbox]{
 
 
 
-@media only screen and (max-width: 770px) {#nav-main-toggle:checked ~ .navigation {
+@media only screen and (max-width: 700px) {#nav-main-toggle:checked ~ .navigation {
     ul {
       display: block;
       opacity: 1;
@@ -89,7 +88,7 @@ input[type=checkbox]{
           
       }
       li:hover a {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 700;
         transition: 0.3s;
         border-bottom: var(--sizing-bigger-border) solid var(--color-main-text);
